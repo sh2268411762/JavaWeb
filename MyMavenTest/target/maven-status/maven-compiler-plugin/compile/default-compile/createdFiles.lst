@@ -1,7 +1,1 @@
-org\example\NBAPlayer\TESTNBA.class
-org\example\NBAPlayer\DAONba.class
-org\example\NBAPlayer\JDBCUtil.class
-org\example\NBAPlayer\NBADao.class
-org\example\NBAPlayer\NBAView.class
-org\example\Main.class
-org\example\NBAPlayer\VIEWNba.class
+org\exmple\servlet\LoginServlet.class
