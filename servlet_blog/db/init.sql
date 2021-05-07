@@ -64,3 +64,9 @@ insert into article(title, content, user_id)
 values ('插入排序', 'public ... ', 3);
 
 
+
+select id, username, password, nickname, sex, birthday, head from user where username='a';
+
+select id, title from article where user_id = 1;
+
+delete from article where id in (1,2,3);

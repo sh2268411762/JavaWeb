@@ -42,7 +42,7 @@ public abstract class AbstractBaseServlet extends HttpServlet
             Object data = process(req, resp);
             //操作成功
             json.setSuccess(true);
-            json.setData("data");
+            json.setData(data);
         } catch (Exception e)
         {
             //异常处理

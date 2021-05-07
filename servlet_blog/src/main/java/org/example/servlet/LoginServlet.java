@@ -1,10 +1,13 @@
 package org.example.servlet;
 
+import org.example.dao.LoginDAO;
 import org.example.exception.AppException;
+import org.example.model.User;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * @author 枳洛淮南
@@ -21,13 +24,28 @@ public class LoginServlet extends AbstractBaseServlet
         String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        if ("abc".equals(username))
+        User user = LoginDAO.query(username);
+        if (user == null)
         {
-            //resp.sendRedirect("jsp/articleList.jsp");
-            return null;
-        } else
-        {
-            throw new AppException("LOG001", "用户名或密码错误");
+            throw new AppException("LOG002", "用户不存在");
         }
+        if (!user.getPassword().equals(password))
+        {
+            throw new AppException("LOG003", "用户名或密码错误");
+        }
+
+        HttpSession session = req.getSession();
+        session.setAttribute("user", user);
+        //登录成功，创建session
+        return null;
+
+//        if ()
+//        {
+//            //resp.sendRedirect("jsp/articleList.jsp");
+//            return null;
+//        } else
+//        {
+//            throw new AppException("LOG001", "用户名或密码错误");
+//        }
     }
 }
