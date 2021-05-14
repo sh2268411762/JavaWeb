@@ -1,2 +1,6 @@
+com\haosun\servlet\MessageListServlet.class
 com\haosun\profile\HelloWorldServlet.class
 com\haosun\profile\HomeServlet.class
+com\haosun\profile\GetCountServlet.class
+com\haosun\profile\IndexServlet.class
+com\haosun\model\Message.class
