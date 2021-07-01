@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/index.html" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/inquire/commod.jsp" value="file://$PROJECT_DIR$/src/main/webapp/inquire" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/inquire/customer.jsp" value="file://$PROJECT_DIR$/src/main/webapp/inquire" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/inquire/supp.jsp" value="file://$PROJECT_DIR$/src/main/webapp/inquire" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/inventory/adjustment.html" value="file://$PROJECT_DIR$/src/main/webapp/inventory" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/inventory/invent.jsp" value="file://$PROJECT_DIR$/src/main/webapp/inventory" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/market/Return.jsp" value="file://$PROJECT_DIR$/src/main/webapp/market" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/market/sale.jsp" value="file://$PROJECT_DIR$/src/main/webapp/market" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/message/modifyCommodity.html" value="file://$PROJECT_DIR$/src/main/webapp/message" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/stock/purchase.jsp" value="file://$PROJECT_DIR$/src/main/webapp/stock" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/stock/return.jsp" value="file://$PROJECT_DIR$/src/main/webapp/stock" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/stock/stock.html" value="file://$PROJECT_DIR$/src/main/webapp/stock" />
+      </map>
+    </option>
+  </component>
+</project>

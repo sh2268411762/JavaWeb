@@ -1,0 +1,35 @@
+spring:
+#连接池的配置信息
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+
+    #thymeleaf前台渲染模版的一些配置
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+
+
+ # devtools:
+ #   restart:
+    #热部署生效
+  #    enabled: false
+    #设置重启的目录，添加那个目录的文件需要重启
+#      additional-paths: src/main/java
+  mvc:
+    static-path-pattern: /**
+
+server:
+  port: 8082
+
+  #自动扫描mybatis目录下得Mapper.xml文件
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
+
+

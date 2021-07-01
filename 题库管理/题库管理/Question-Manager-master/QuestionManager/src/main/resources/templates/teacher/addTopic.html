@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Bootstrap Advance Admin Template</title>
+
+    <!-- BOOTSTRAP STYLES-->
+    <link href="/admin/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="/admin/assets/css/font-awesome.css" rel="stylesheet" />
+    <!--CUSTOM BASIC STYLES-->
+    <link href="/admin/assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="/admin/assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">当前用户</a>
+        </div>
+        <div class="navbar-title">高校题库系统</div>
+        <div class="header-right">
+
+            <a href="login.html" class="btn" title="Logout">注销</a>
+
+
+        </div>
+    </nav>
+    <!-- /. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <div class="user-img-div">
+                        <img src="/teacher/assets/img/manteacher.jpg" class="img-thumbnail" />
+
+                        <div class="inner-text">
+                            zhangs(教师)
+                            <br />
+                            <small>上次登录时间 : 2周前 </small>
+                        </div>
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <a href="studentTopicInfo.html"><i class="fa fa-desktop "></i>学生做题情况</a>
+                </li>
+                <li>
+                    <a href="faultTopicList.html"><i class="fa fa-desktop "></i>易错题型</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-desktop "></i>学生信息管理 <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="studentList.html"><i class="fa fa-toggle-on"></i>学生列表</a>
+                        </li>
+                        <li>
+                            <a href="addStudent.html"><i class="fa fa-bell "></i>新增学生</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"  class="active-menu-top"><i class="fa fa-desktop "></i>题目信息管理 <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse in">
+                        <li>
+                            <a href="topicList.html"><i class="fa fa-toggle-on"></i>题目列表</a>
+                        </li>
+                        <li>
+                            <a class="active-menu" href="addTopic.html"><i class="fa fa-bell "></i>新增题目</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-desktop "></i>章节信息管理 <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="chapterList.html"><i class="fa fa-toggle-on"></i>章节列表</a>
+                        </li>
+                        <li>
+                            <a href="addChapter.html"><i class="fa fa-bell "></i>新增章节</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-head-line">新增教师</h1>
+
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-body">
+                    <form role="form">
+                        <!--   <div class="form-group">
+                               <label>登录名</label>
+                               <input class="form-control" type="text">
+                           </div>-->
+                        <table class="table_add_info">
+                            <tr>
+                                <td><label>登录名:</label></td>
+                                <td><input id="teacherName" class="form-control" type="text" name="teacherName"></td>
+                            </tr>
+                            <tr>
+                                <td><label>密码:</label></td>
+                                <td><input class="form-control" type="password"></td>
+                            </tr>
+                            <tr>
+                                <td><label>所教科目:</label></td>
+                                <td><select class="form-control">
+                                    <option>语文</option>
+                                    <option>数学</option>
+                                    <option>英语</option>
+                                    <option>物理</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td><label>性别:</label></td>
+                                <td><select class="form-control">
+                                    <option>男</option>
+                                    <option>女</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td class="td_add_info"><label>联系电话:</label></td>
+                                <td class="td_add_info"><input class="form-control" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label>教师全名:</label></td>
+                                <td><input class="form-control" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label>录入时间:</label></td>
+                                <td><input id="inputDate" type="date"></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit" class="btn btn-info">新增 </button></td>
+                                <td><input type="reset" class="btn btn-info" value="重置"></input> </td>
+                            </tr>
+                        </table>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /. PAGE WRAPPER  -->
+</div>
+<!-- /. WRAPPER  -->
+<div id="footer-sec">
+    &copy; 2014 YourCompany | More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+</div>
+<!-- /. FOOTER  -->
+<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+<!-- JQUERY SCRIPTS -->
+<script src="/admin/assets/js/jquery-1.10.2.js"></script>
+<!-- BOOTSTRAP SCRIPTS -->
+<script src="/admin/assets/js/bootstrap.js"></script>
+<!-- METISMENU SCRIPTS -->
+<script src="/admin/assets/js/jquery.metisMenu.js"></script>
+<!-- CUSTOM SCRIPTS -->
+<script src="/admin/assets/js/custom.js"></script>
+
+<script type="text/javascript">
+
+    function init(){
+
+        /*自动初始化日期，并设置日期只读*/
+        var now = new Date();
+        var day = ("0"+now.getDate()).slice(-2);
+        var month = ("0"+(now.getMonth()+1)).slice(-2);
+        $("#inputDate").val(now.getFullYear()+"-"+month+"-"+day);
+        $("#inputDate").attr("readonly","readonly");
+    }
+    init();
+</script>
+
+</body>
+</html>
